@@ -1,29 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="200dp"
+    android:layout_height="250dp"
     android:orientation="vertical"
     android:background="@drawable/lienzo"
     >
 
     <TextView
-        android:id="@+id/txtSmall"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Grosor de punto"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"/>
+    <TextView
+        android:id="@+id/txtSmall"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
         android:text="Pequeño"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:background="@drawable/lienzo"/>
 
     <TextView
         android:id="@+id/txtMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:textColor="@color/black"
+        android:layout_height="35dp"
         android:text="Mediano"
-        android:layout_gravity="center_horizontal"/>
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+        android:background="@drawable/lienzo"
+        android:layout_margin="10dp"/>
 
     <TextView
         android:id="@+id/txtBig"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:textColor="@color/black"
         android:text="Grande"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:background="@drawable/lienzo"
+        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"/>
 </LinearLayout>

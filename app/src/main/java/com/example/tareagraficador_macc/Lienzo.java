@@ -6,6 +6,8 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.MotionEvent;
@@ -26,7 +28,9 @@ public class Lienzo extends View {
     private Bitmap canvasBitmap;
     //canvas
     private Canvas drawCanvas;
-    static float brushSize;
+//    static float brushSize;
+    boolean erase = false;
+
 
     public Lienzo(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
@@ -94,5 +98,22 @@ public class Lienzo extends View {
 
     public static void setBrushSize(float newSize){
         drawPaint.setStrokeWidth(newSize);
+    }
+
+    public void newDraw(){
+        drawCanvas.drawColor(0 , PorterDuff.Mode.CLEAR);
+        invalidate();
+    }
+
+    public void setErase(boolean eraseMode){
+        erase = eraseMode;
+        if (erase){
+            drawPaint.setColor(Color.WHITE);
+//            drawPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
+        }
+        else{
+            drawPaint.setColor(paintColor);
+//            drawPaint.setXfermode(null);
+        }
     }
 }
