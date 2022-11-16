@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lienzo"
+    >
+
+    <TextView
+        android:id="@+id/txtSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pequeño"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/txtMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mediano"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/txtBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grande"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

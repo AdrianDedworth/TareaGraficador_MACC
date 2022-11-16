@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.6"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/imgBtnNewDraw"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_add" />
+
+        <ImageButton
+            android:id="@+id/imgBtnBrushSize"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/ic_brush"
+            android:clickable="true"
+            />
+
+        <ImageButton
+            android:id="@+id/imgBtnErase"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/ic_del"/>
+
+        <ImageButton
+            android:id="@+id/imgBtnSaveDraw"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/ic_save"/>
+
+    </LinearLayout>
+
+    <view
+        android:id="@+id/lienzo"
+        class="com.example.tareagraficador_macc.Lienzo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@drawable/lienzo"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgBtnBlack"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:tag="#FF000000"
+            android:background="@color/cBlack"/>
+
+        <ImageButton
+            android:id="@+id/imgBtnGreen"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:tag="#66BB6A"
+            android:background="@color/cGreen"
+            android:layout_marginStart="4dp"/>
+
+        <ImageButton
+            android:id="@+id/imgBtnYellow"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:tag="#FFEE58"
+            android:background="@color/cYellow"
+            android:layout_marginStart="4dp"/>
+
+        <ImageButton
+            android:id="@+id/imgBtnBlue"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:tag="#42A5F5"
+            android:background="@color/cBlue"
+            android:layout_marginStart="4dp"/>
+
+        <ImageButton
+            android:id="@+id/imgBtnRed"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:tag="#F10635"
+            android:background="@color/cRed"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>
